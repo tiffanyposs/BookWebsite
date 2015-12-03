@@ -1,0 +1,23 @@
+{
+  "name": "booksite",
+  "version": "1.0.0",
+  "description": "Website for a book",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "book",
+    "front-end",
+    "bootstrap",
+    "css",
+    "html",
+    "awesome"
+  ],
+  "author": "Tiffany Poss",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.13.3"
+  },
+  "devDependencies": {}
+}

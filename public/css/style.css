@@ -1,0 +1,149 @@
+body{
+	height: 100%;
+}
+
+*::selection {
+  background: hotpink; /* WebKit/Blink Browsers */
+}
+*::-moz-selection {
+  background: hotpink; /* Gecko Browsers */
+}
+
+
+.center{
+	text-align: center;
+}
+
+
+.btn-outline{
+	background-color: transparent;
+	width: 200px;
+	padding: 5px 0;
+	outline: none;
+	border: 2px solid black;
+	font-weight: bold;
+	border-radius: 5px;
+}
+
+.btn-outline:hover{
+	background-color: hotpink;
+}
+
+
+
+
+
+header{
+	background-color: hotpink;
+	padding-top: 50px;
+}
+
+
+
+header ul{
+	list-style: none;
+}
+
+header li{
+	display: inline-block;
+	
+}
+
+header a{
+	color: white;
+	font-size: 18px;
+	padding: 10px;
+}
+
+.book-row{
+	padding: 30px 0;
+	/*height: 100%;*/
+	/*background-color: lightblue;*/
+}
+
+.book-row > div{
+	/*height: 100%;*/
+	margin: 50px 0;
+}
+
+.cover-image{
+	margin-top: 20px;
+}
+
+.book-info{
+	margin-top: 150px;
+}
+
+
+
+
+
+.info-row{
+	background-color: #909494;
+	/*height: 300px;*/
+}
+
+.info-row > div{
+	padding: 80px 0;
+}
+
+.info-row > div h2{
+	margin-bottom: 30px;
+}
+
+
+
+
+
+.author-row h2{
+	padding: 20px;
+}
+
+.author-row .meet-michele > div{
+	text-align: right;
+}
+
+.author-row .meet-michele img{
+	margin: 50px 0;
+}
+
+.author-row .meet-michele h3{
+	margin-top: 20%;
+}
+
+
+.icon-container{
+	padding: 50px 0;
+	/*background-color: lightgrey*/
+}
+
+
+.icon-row span{
+	font-size: 100px;
+	color: pink;
+}
+
+.icon-row > div > div{
+	width: 50px;
+	/*height: 1px;*/
+	border-bottom: 2px solid hotpink;
+	margin: 10px auto;
+}
+
+
+.icon-row p:first-child{
+	margin-bottom: 30px;
+	/*padding: 0 150px;*/
+}
+
+
+footer{
+	background-color: hotpink;
+	height: 500px;
+}
+
+
+
+.sign-up-modal .modal-body{
+	padding: 70px 0;
+}
