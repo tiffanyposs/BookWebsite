@@ -1,14 +1,51 @@
 body{
 	height: 100%;
+	
+	/*background-color: #FC9D9A;*/
+}
+
+body *{
+  color: #555555;
+  font-family: 'Lato', sans-serif;
 }
 
 *::selection {
-  background: hotpink; /* WebKit/Blink Browsers */
+  background: #FF6796;/*pink*/ /* WebKit/Blink Browsers */ /*pink*/
 }
 *::-moz-selection {
-  background: hotpink; /* Gecko Browsers */
+  background: #FF6796;/*pink*/ /* Gecko Browsers */
 }
 
+h1{
+	font-size: 50px;
+	font-style: italic;
+	font-weight: 300;
+}
+
+h2{
+  font-style: italic;
+  font-weight: 300;
+  font-size: 40px;
+}
+
+h3{
+	font-style: italic;
+	font-weight: 300;
+	font-size: 30px;
+}
+
+h4{
+	font-weight: 500;
+	font-style: italic;
+	font-size: 20px;
+}
+
+
+p{
+	font-size: 16px;
+	font-style: italic;
+	letter-spacing: 0.25px;	
+}
 
 .center{
 	text-align: center;
@@ -16,32 +53,49 @@ body{
 
 
 .btn-outline{
-	background-color: transparent;
+	background-color: white;
 	width: 200px;
 	padding: 5px 0;
 	outline: none;
-	border: 2px solid black;
+	border: 2px solid #555555; /*grey*/
 	font-weight: bold;
 	border-radius: 5px;
+	/*color: black;*/
 }
 
 .btn-outline:hover{
-	background-color: hotpink;
+	background-color: #FF6796;/*pink*/
 }
 
 
 
+
+.social-media{
+	position: fixed;
+	top: 5%;
+	z-index: 1000;
+}
+
+.social-media li{
+	list-style: none;
+	text-align: center;
+	padding: 10px;
+}
 
 
 header{
-	background-color: hotpink;
+	/*background-color: hotpink;*/
+	background-color: rgba(255,255,255,0.9); /*white*/
 	padding-top: 50px;
+	position: fixed;
+	width: 100%;
+	z-index: 500;
 }
-
 
 
 header ul{
 	list-style: none;
+	/*position: fixed;*/
 }
 
 header li{
@@ -50,13 +104,17 @@ header li{
 }
 
 header a{
-	color: white;
 	font-size: 18px;
 	padding: 10px;
+	font-weight: 500;
+}
+
+header a:hover{
+	text-decoration: none;
 }
 
 .book-row{
-	padding: 30px 0;
+	padding: 20px 0;
 	/*height: 100%;*/
 	/*background-color: lightblue;*/
 }
@@ -66,12 +124,20 @@ header a{
 	margin: 50px 0;
 }
 
+.book-row h1{
+	margin-bottom: 20px;
+}
+
+.book-row p{
+	margin-bottom: 15px;
+}
+
 .cover-image{
 	margin-top: 20px;
 }
 
 .book-info{
-	margin-top: 150px;
+	margin-top: 140px;
 }
 
 
@@ -79,12 +145,14 @@ header a{
 
 
 .info-row{
-	background-color: #909494;
+	background-color: #909494; /*light grey*/
 	/*height: 300px;*/
 }
 
 .info-row > div{
-	padding: 80px 0;
+	/*padding: 80px 0;*/
+	padding: 35px 0;
+
 }
 
 .info-row > div h2{
@@ -104,7 +172,7 @@ header a{
 }
 
 .author-row .meet-michele img{
-	margin: 50px 0;
+	margin: 40px 0;
 }
 
 .author-row .meet-michele h3{
@@ -112,21 +180,36 @@ header a{
 }
 
 
-.icon-container{
-	padding: 50px 0;
-	/*background-color: lightgrey*/
+.divider > div{
+	height: 1px;
+	border: 1px solid #909494;
+	margin-top: 40px;
+	margin-bottom: 40px;
 }
 
 
+.icon-container{
+	padding: 50px auto;
+	/*background-color: lightgrey*/
+}
+
+.icon-container h2{
+	margin-bottom: 50px;
+}
+
+.icon-row{
+	margin-bottom: 50px;
+}
+
 .icon-row span{
 	font-size: 100px;
-	color: pink;
+	color: #FF6796;
 }
 
 .icon-row > div > div{
 	width: 50px;
 	/*height: 1px;*/
-	border-bottom: 2px solid hotpink;
+	border-bottom: 2px solid #FF6796;
 	margin: 10px auto;
 }
 
@@ -138,12 +221,59 @@ header a{
 
 
 footer{
-	background-color: hotpink;
-	height: 500px;
+	background-color: #FF6796; /*pink*/
+	/*height: 500px;*/
+	padding-top: 100px;
 }
 
 
 
+footer h3{
+	margin-bottom: 30px;
+}
+
+footer .buttons{
+	margin-bottom: 40px;
+}
+
+
+
+footer p{
+	margin-top: 70px;
+}
+
+footer .footer-media > a{
+	padding: 10px;
+}
+
+
+
+
+.modal-header{
+	background-color: #FF6796; 
+}
+
+.modal-header > .close{
+	color: #555555;
+}
+
+.modal-title{
+	/*margin-left: 30px;*/
+	text-align: center;
+}
+
 .sign-up-modal .modal-body{
 	padding: 70px 0;
+}
+
+.modal-body input{
+	width: 70%;
+}
+
+.modal-content{
+	margin-top: 150px;
+}
+
+.sign-up-modal .form-group:nth-child(2){
+	margin-bottom: 40px;
 }
