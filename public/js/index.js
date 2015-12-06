@@ -41,4 +41,23 @@ var animatedScroll = false;
 
 
 
+	$("#about-button").click(function() {
+	    $('html, body').animate({
+	        scrollTop: $("#author").offset().top
+	    }, 1000);
+	});
+
+	$("#home-button").click(function() {
+	    $('html, body').animate({
+	        scrollTop: $("#home").offset().top
+	    }, 1000);
+	});
+
+	$("#contact-button").click(function() {
+	    $('html, body').animate({
+	        scrollTop: $("#contact").offset().top
+	    }, 1000);
+	});
+
+
 })

@@ -27,11 +27,11 @@
 	</div>
 
 	<header class="container-fluid">
-		<nav class='col-md-offset-8 col-md-4'>
+		<nav class='col-lg-offset-8 col-lg-4 col-md-offset-7 col-sm-offset-5'>
 			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">About the Author</a></li>
-				<li><a href="#">Contact</a></li>
+				<li id='home-button'>Home</li>
+				<li id='about-button'>About the Author</li>
+				<li id='contact-button'>Contact</li>
 			</ul>
 		</nav>
 	</header>
@@ -39,14 +39,14 @@
 
 
 
-	<div class="container-fluid">
+	<div id='home' class="container-fluid">
 
 		<div class="row book-row">
-			<div class='col-md-5'>
-				<img class="col-md-offset-4 col-md-8 img-responsive cover-image" src="/images/cover/Covers1120_Page_3.jpg">
+			<div class='col-lg-5 col-md-4'>
+				<img class="col-lg-offset-4 col-lg-8 col-md-12 col-sm-offset-2 col-sm-8 img-responsive cover-image" src="/images/cover/Covers1120_Page_3.jpg">
 			</div>
-			<div class='col-md-7'>
-				<div class='col-md-10 book-info'>
+			<div class='col-lg-7 col-md-8 col-sm-12'>
+				<div class='col-lg-10 col-sm-10 col-sm-offset-1 book-info'>
 					<h1>Getting Married In New York Can Be Tough</h1>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -78,8 +78,8 @@
 		</div>
 	</div>
 
-
-	<div class="container-fluid author-row">
+<!-- 
+	<div id='author' class="container-fluid author-row">
 		<div class='row'>
 			<div class='col-md-12 center'>
 				<h2>About the Author</h2>
@@ -93,8 +93,28 @@
 				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 				consequat.</p>
 			</div>
-			<div class='col-md-6'>
+			<div class='col-sm-offset-2 col-sm-8 col-md-6'>
 				<img class='col-md-offset-2 col-md-8 img-responsive' src="./images/michele/michele.jpg">
+			</div>
+		</div>
+	</div> -->
+
+	<div id='author' class="container-fluid author-row">
+		<div class='row'>
+			<div class='col-md-12 center'>
+				<h2>About the Author</h2>
+			</div>
+		</div>
+		<div class='row meet-michele'>
+			<div class='col-md-6 col-sm-12'>
+				<h3>Meet Michele</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat.</p>
+			</div>
+			<div class='col-md-6 col-sm-12'>
+				<img class='img-responsive col-sm-offset-0 col-md-9 col-sm-offset-2 col-sm-8' src="./images/michele/michele.jpg">
 			</div>
 		</div>
 	</div>
@@ -106,26 +126,26 @@
 
 	<div class="container-fluid icon-container">
 		<div class='row'>
-			<div class='col-md-12 center'>
+			<div class='col-lg-12 col-md-12 center'>
 				<h2>Everything you would need to know</h2>
 			</div>
 		</div>
 		<div class='row icon-row'>
-			<div class='col-md-offset-3 col-md-2 center'>
+			<div class='col-lg-offset-3 col-lg-2 col-md-offset-3 col-md-2 center'>
 				<p><span class='fa fa-cogs fa-5x' aria-hidden="true"></span></p>
 				<h4>Find Ideas</h4>
 				<div></div>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua.</p>
 			</div>
-			<div class='col-md-2 center'>
+			<div class='col-lg-2 col-md-2 center'>
 				<p><span class='fa fa-calendar-check-o fa-5x' aria-hidden="true"></span></p>
 				<h4>Schedule</h4>
 				<div></div>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua.</p>
 			</div>
-			<div class='col-md-2 center'>
+			<div class='col-lg-2 col-md-2 center'>
 				<p><span class='fa fa-glass fa-5x' aria-hidden="true"></span></p>
 				<h4>Enjoy</h4>
 				<div></div>
@@ -137,7 +157,7 @@
 
 
 
-	<footer class="container-fluid">
+	<footer id='contact' class="container-fluid">
 		<div class='row'>
 			<div class='col-md-12 center'>
 				<h1>Order your copy today!</h1>
@@ -145,10 +165,13 @@
 		</div>
 		<div class='row'>
 			<div class='col-md-12 center'>
-				<h3>Order your copy today!</h3>
+				<!-- <h3>Order your copy today!</h3> -->
 				<div class = 'buttons'>
 					<a href="http://www.amazon.com" target='blank'><button class='btn-outline'>Buy</button></a>
 					<button class='btn-outline' data-toggle="modal" data-target="#signUpModal">Sign Up</button>
+				</div>
+				<div>
+					<h4>Follow us on social media!</h4>
 				</div>
 				<div class='footer-media'>
 					<a href="#" target='_blank'><span class='fa fa-twitter fa-3x'></span></a>
